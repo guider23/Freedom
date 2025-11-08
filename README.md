@@ -4,7 +4,7 @@
 
 So my college decided to block literally everything. YouTube? Blocked. Reddit? Blocked. Even Stack Overflow sometimes (yes, really). 
 
-## TL;DR - Just Want It Working?
+## Just Want It Working?
 
 ```bash
 (You should have installed wireguard.exe beforehand) don't expect me to do everything
@@ -200,5 +200,6 @@ MIT License
 
 
 A dedicated work by Kaniska LOL 🥰
+
 
 

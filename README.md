@@ -24,26 +24,6 @@ Here's the thing - they can't blacklist domains that don't exist yet. So I made 
 
 By default, it connects to my servers. But fair warning: sometimes I forget to pay the AWS bill or just turn off the EC2 instance for fun. If it doesn't work, don't panic - just spin up your own server and use `--url` to point to it.
 
-## Installation & Quick Start
-
-### Install
-
-```bash
-pip install how-freedom-feels
-```
-
-### Connect
-
-```bash
-freedom --connect
-```
-
-### Want to Use Your Own Server?
-
-```bash
-freedom --connect --url https://your-domain.com/wg0.conf
-```
-
 ## What You Actually Need (Requirements)
 
 First, you need WireGuard. Yeah, you actually have to install something. I know, shocking.
@@ -200,6 +180,7 @@ MIT License
 
 
 A dedicated work by Kaniska LOL 🥰
+
 
 
 

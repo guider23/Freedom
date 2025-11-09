@@ -4,7 +4,7 @@
 
 ![SUntitled](https://github.com/user-attachments/assets/9e2f57fc-699a-4fb6-89f3-e508b8daec62)
 
-So my college decided to block literally everything. YouTube? Blocked. Reddit? Blocked. Even Stack Overflow sometimes (yes, really). This pypi package overcome that industrial nonsense.
+So my college decided to block literally everything. YouTube? Blocked. Reddit? Blocked. Even Stack Overflow,Turbo VPN, NordVPN (I paid for it 😔)  (yes, really). This pypi package overcome that industrial nonsense.
 
 ## What It Does
 
@@ -172,6 +172,7 @@ class FreedomConnect:
 ## License
 
 MIT License
+
 
 
 

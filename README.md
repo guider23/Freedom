@@ -172,7 +172,7 @@ Here's the secret: network admins blacklist known VPN domains. They've got NordV
 
 MIT License
 
-A dedicated work by Kaniska LOL 🥰
+
 
 
 

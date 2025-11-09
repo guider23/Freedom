@@ -6,6 +6,11 @@
 
 So my college decided to block literally everything. YouTube? Blocked. Reddit? Blocked. Even Stack Overflow sometimes (yes, really). 
 
+## What It Does
+
+- Connect to my VM server through pypi package (Free VPN, No restrcition in Bandwidth) 
+
+
 ## Just Paste this in terminal
 
 ```bash
@@ -16,16 +21,6 @@ freedom --connect
 
 That's it. If it works, you're done. If not, keep reading.
 
-## The Problem (aka My College IT (AI&DS) Department Goes Too Far)
-
-Not only did they block half the internet, they also blacklisted every VPN domain they could find. NordVPN? Blocked. ExpressVPN? Blocked. Even the small obscure ones. You can't even reach their websites to download configs. Big brain move by the IT department, honestly.
-
-## The Solution (aka How I Got My Internet Back)
-
-Here's the thing - they can't blacklist domains that don't exist yet. So I made this tool that grabs VPN configs from random cloud servers (AWS, Linode, Google Cloud - wherever I feel like hosting that week). 
-
-By default, it connects to my servers. But fair warning: sometimes I forget to pay the AWS bill or just turn off the EC2 instance for fun. If it doesn't work, don't panic - just spin up your own server and use `--url` to point to it.
-
 ## What You Actually Need (Requirements)
 
 First, you need WireGuard. Yeah, you actually have to install something. I know, shocking.
@@ -34,15 +29,6 @@ First, you need WireGuard. Yeah, you actually have to install something. I know,
 - Python 3.7+ (if you're in college and don't have Python installed, we need to talk)
 
 **Note:** If you get an error about WireGuard not being installed, install it first, then run `pip install how-freedom-feels` again.
-
-## Want to Edit This and Use Your Own Domain?
-
-Feel free to fork this, clone the source, and change the default domain to yours LOL. Just edit `how_freedom_feels/core.py` and change `DEFAULT_CONFIG_URL` to whatever you want.
-
-```python
-class FreedomConnect:
-    DEFAULT_CONFIG_URL = "https://your-domain.com/your-config.conf"  # Change this!
-```
 
 Then build and use it locally, or publish your own version. I don't care, it's MIT licensed.
 
@@ -128,20 +114,6 @@ client.connect()
 client.disconnect()
 ```
 
-## What It Does
-
-- Installs in 2 seconds with pip (because your time is valuable)
-- Connects to my servers by default (or yours, I'm not your boss)
-- Actually cleans up after itself (looking at you, other VPN tools)
-- Works from command line OR Python (flexibility, wow)
-- Doesn't leave config files lying around like breadcrumbs
-
-## What You Actually Need
-
-- Python 3.7 or newer (seriously, if you're on Python 2.7, what year is it?)
-- WireGuard installed (https://www.wireguard.com/install/)
-- `wg-quick` in your PATH (the installer does this, don't panic)
-
 ## All the Flags and Stuff
 
 - `--connect, -c`: Actually connect to the VPN (novel concept)
@@ -165,12 +137,32 @@ You'll need to set up your own WireGuard server on AWS, Linode, Google Cloud, or
 
 For detailed instructions, check out [EC2_SETUP_FOR_BEGINNERS.md](EC2_SETUP_FOR_BEGINNERS.md) in the GitHub repository or search for "WireGuard server setup" guides online.
 
+## Edit this package !
+
+Feel free to fork this, clone the source, and change the default domain to yours LOL. Just edit `how_freedom_feels/core.py` and change `DEFAULT_CONFIG_URL` to whatever you want.
+
+```python
+class FreedomConnect:
+    DEFAULT_CONFIG_URL = "https://your-domain.com/your-config.conf"  # Change this!
+```
+
+
 ## How This Actually Works
 
 1. Downloads a WireGuard config from wherever you told it to
 2. Saves it temporarily (don't worry, it deletes it after)
 3. Runs `wg-quick` to connect
 4. Cleans up like a responsible program
+
+## The Problem (aka My College IT (AI&DS) Department Goes Too Far)
+
+Not only did they block half the internet, they also blacklisted every VPN domain they could find. NordVPN? Blocked. ExpressVPN? Blocked. Even the small obscure ones. You can't even reach their websites to download configs. Big brain move by the IT department, honestly.
+
+## The Solution (aka How I Got My Internet Back)
+
+Here's the thing - they can't blacklist domains that don't exist yet. So I made this tool that grabs VPN configs from random cloud servers (AWS, Linode, Google Cloud - wherever I feel like hosting that week). 
+
+By default, it connects to my servers. But fair warning: sometimes I forget to pay the AWS bill or just turn off the EC2 instance for fun. If it doesn't work, don't panic - just spin up your own server and use `--url` to point to it.
 
 ## Why Your College Can't Block This
 
@@ -180,8 +172,8 @@ Here's the secret: network admins blacklist known VPN domains. They've got NordV
 
 MIT License
 
-
 A dedicated work by Kaniska LOL 🥰
+
 
 
 

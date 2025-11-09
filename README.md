@@ -32,6 +32,21 @@ First, you need WireGuard. Yeah, you actually have to install something. I know,
 
 Then build and use it locally, or publish your own version. I don't care, it's MIT licensed.
 
+## The Problem (aka My College IT (AI&DS) Department Goes Too Far)
+
+Not only did they block half the internet, they also blacklisted every VPN domain they could find. NordVPN? Blocked. ExpressVPN? Blocked. Even the small obscure ones. You can't even reach their websites to download configs. Big brain move by the IT department, honestly.
+
+## The Solution (aka How I Got My Internet Back)
+
+Here's the thing - they can't blacklist domains that don't exist yet. So I made this tool that grabs VPN configs from random cloud servers (AWS, Linode, Google Cloud - wherever I feel like hosting that week). 
+
+By default, it connects to my servers. But fair warning: sometimes I forget to pay the AWS bill or just turn off the EC2 instance for fun. If it doesn't work, don't panic - just spin up your own server and use `--url` to point to it.
+
+## Why Your College Can't Block This
+
+Here's the secret: network admins blacklist known VPN domains. They've got NordVPN.com, ExpressVPN.com, all the big names. But your random AWS EC2 instance at `ec2-54-123-45-67.compute.amazonaws.com`? Yeah, that's not on their list. You're welcome.
+
+
 ## Installation
 
 ```bash
@@ -153,24 +168,11 @@ class FreedomConnect:
 2. Saves it temporarily (don't worry, it deletes it after)
 3. Runs `wg-quick` to connect
 4. Cleans up like a responsible program
-
-## The Problem (aka My College IT (AI&DS) Department Goes Too Far)
-
-Not only did they block half the internet, they also blacklisted every VPN domain they could find. NordVPN? Blocked. ExpressVPN? Blocked. Even the small obscure ones. You can't even reach their websites to download configs. Big brain move by the IT department, honestly.
-
-## The Solution (aka How I Got My Internet Back)
-
-Here's the thing - they can't blacklist domains that don't exist yet. So I made this tool that grabs VPN configs from random cloud servers (AWS, Linode, Google Cloud - wherever I feel like hosting that week). 
-
-By default, it connects to my servers. But fair warning: sometimes I forget to pay the AWS bill or just turn off the EC2 instance for fun. If it doesn't work, don't panic - just spin up your own server and use `--url` to point to it.
-
-## Why Your College Can't Block This
-
-Here's the secret: network admins blacklist known VPN domains. They've got NordVPN.com, ExpressVPN.com, all the big names. But your random AWS EC2 instance at `ec2-54-123-45-67.compute.amazonaws.com`? Yeah, that's not on their list. You're welcome.
-
+5. 
 ## License
 
 MIT License
+
 
 
 

@@ -1,5 +1,7 @@
 # How Freedom Feels
-# I know WireGuard does the job, but I wanted something simple so my classmates could connect to my VM. Explaining how to create a config gets tricky when everyone’s still busy with binary trees, so I built my own VPN client.
+> I know WireGuard does the job, but I wanted something simple so my classmates could connect to my VM. Explaining how to create a config gets tricky when everyone’s still busy with binary trees, so I built my own VPN client.
+
+
 ![SUntitled](https://github.com/user-attachments/assets/9e2f57fc-699a-4fb6-89f3-e508b8daec62)
 
 So my college decided to block literally everything. YouTube? Blocked. Reddit? Blocked. Even Stack Overflow sometimes (yes, really). 
@@ -180,6 +182,7 @@ MIT License
 
 
 A dedicated work by Kaniska LOL 🥰
+
 
 
 

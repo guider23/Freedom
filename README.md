@@ -126,7 +126,7 @@ client.disconnect()
 
 ## Setting Up Your Own Server
 
-You'll need to set up your own WireGuard server on AWS, Linode, Google Cloud, or any VPS provider. 
+You'll need to set up your own WireGuard server on AWS, Linode, Google Cloud, or any VPS provider. (If my VM is down)
 
 **Quick steps:**
 1. Spin up a Linux server (Ubuntu recommended)
@@ -171,6 +171,7 @@ Here's the secret: network admins blacklist known VPN domains. They've got NordV
 ## License
 
 MIT License
+
 
 
 

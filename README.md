@@ -1,4 +1,6 @@
-# The VM is currently down, please raise a issue or mail to sofiyasenthilkumar@gmail.com the VM will be automatically turned on within 5 minutes.
+# ~~The VM is currently down, please raise a issue or mail to sofiyasenthilkumar@gmail.com the VM will be automatically turned on within 5 minutes.~~
+
+# VM Status Online ✅
 # How Freedom Feels
 > I know WireGuard does the job, but I wanted something simple so my classmates could connect to my VM. Explaining how to create a config gets tricky when everyone’s still busy with binary trees, so I built my own VPN client.
 
@@ -173,6 +175,7 @@ class FreedomConnect:
 ## License
 
 MIT License
+
 
 
 

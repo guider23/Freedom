@@ -28,7 +28,7 @@ That's it. If it works, you're done. If not, keep reading.
 
 First, you need WireGuard. Yeah, you actually have to install something. I know, shocking.
 
-- WireGuard: https://www.wireguard.com/install/ (just click and install, it's not rocket science)
+- WireGuard: https://download.wireguard.com/windows-client/wireguard-installer.exe (just click and install, it's not rocket science)
 - Python 3.7+ (if you're in college and don't have Python installed, we need to talk)
 
 **Note:** If you get an error about WireGuard not being installed, install it first, then run `pip install how-freedom-feels` again.
@@ -175,6 +175,7 @@ class FreedomConnect:
 ## License
 
 MIT License
+
 
 
 

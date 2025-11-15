@@ -1,4 +1,3 @@
-# 🥀 All VM's are down (Project is under development)
 # How Freedom Feels
 > I know WireGuard does the job, but I wanted something simple so my classmates could connect to my VM. Explaining how to create a config gets tricky when everyone’s still busy with binary trees, so I built my own VPN client.
 
@@ -179,6 +178,7 @@ class FreedomConnect:
 ## License
 
 MIT License
+
 
 
 

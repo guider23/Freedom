@@ -1,4 +1,4 @@
-# All VM's are down (Project is under development)
+# 🥀 All VM's are down (Project is under development)
 # How Freedom Feels
 > I know WireGuard does the job, but I wanted something simple so my classmates could connect to my VM. Explaining how to create a config gets tricky when everyone’s still busy with binary trees, so I built my own VPN client.
 
@@ -13,14 +13,20 @@ So my college decided to block literally everything. YouTube? Blocked. Reddit? B
 
 
 ## Just Paste this in terminal
-
+(You should have installed wireguard.exe beforehand) 
 ```bash
-(You should have installed wireguard.exe beforehand) don't expect me to do everything
 pip install how-freedom-feels
 freedom --connect
 ```
 
 That's it. If it works, you're done. If not, keep reading.
+
+## PyPi Index is also blocked ?
+
+Try
+```bash
+pip install how-freedom-feels --index-url https://roxy.bcworks.in.net/freedom/
+```
 
 ## What You Actually Need (Requirements)
 
@@ -173,6 +179,7 @@ class FreedomConnect:
 ## License
 
 MIT License
+
 
 
 
